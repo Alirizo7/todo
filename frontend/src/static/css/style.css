@@ -1,0 +1,157 @@
+::-webkit-scrollbar {
+	width: 0px;
+}
+
+.main {
+	height: 850px;
+}
+
+.main-box {
+	height: 90%;
+}
+
+.delete-btn:hover, .delete-btn:hover>svg {
+	background-color: #ff2c2c !important;
+	color: #fff !important;
+}
+
+.edit-btn:hover, .edit-btn:hover>svg {
+	background-color: rgb(255, 242, 95) !important;
+	color: #000 !important;
+}
+
+.completed-btn:hover, .completed-btn:hover>svg, .btn-completed {
+	background-color: rgb(20, 224, 20) !important;
+	color: #fff !important;
+}
+
+.todos {
+	overflow-y: scroll;
+	height: 450px;
+}
+
+.todo {
+	border: 1px solid #d7d7d7;
+	z-index: 9999;
+	transition: background-color .1s ease-in-out;
+	cursor: pointer;
+}
+
+.todo-hover:hover .todo-title {
+	color: black !important;
+}
+
+.todo-hover:hover {
+	background-color: #ffffff !important;
+}
+
+.todo:hover {
+	background-color: #e3e3e3;
+}
+
+.todo.active {
+	background-color: #f5f5f5 !important;
+}
+
+.btn-settings {
+	position: absolute !important;
+	right: 2%;
+	top: 2%;
+	width: 50px;
+	height: 60px;
+}
+
+.todo-title.active {
+	text-decoration: line-through;
+	color: rgb(52, 52, 255)
+}
+
+/* Social links */
+
+.social-box {
+	margin: 0 auto;
+}
+
+.inLogo:hover {
+	color: #614bca;
+}
+
+.instaLogo:hover {
+	color: #da13ab;
+}
+
+.twitterLogo:hover {
+	color: #75b7f4;
+}
+
+.facebookLogo:hover {
+	color: #29487D;
+}
+
+
+/* notify styles */
+
+.notify-active {
+	display: block !important;
+}
+
+.notify-box {
+	display: none;
+	z-index: 9999;
+	position: absolute;
+	top: 40%;
+	left: 40%;
+	max-width: 500px;
+	max-height: 100px;
+	width: 350px;
+	box-shadow: 3px 25px 51px -8px rgba(66, 60, 60, 0.84);
+	-webkit-box-shadow: 3px 25px 51px -8px rgba(66, 60, 60, 0.84);
+	-moz-box-shadow: 3px 25px 51px -8px rgba(66, 60, 60, 0.84);
+}
+
+.notify-box>.message-body {
+	height: 90px;
+}
+
+.notify-btns {
+	position: absolute;
+	bottom: 8%;
+	right: 2px;
+}
+
+.notify-btn {
+	margin: 0 6px;
+}
+
+.notify-btn:focus {
+	border: 2px solid #00ff37 !important;
+}
+
+.completed {
+	color: blue;
+	text-decoration: line-through;
+}
+
+.night {
+	background-color: #363636;
+	color: #fcfcfc;
+}
+
+.day {
+	background-color: #fcfcfc;
+	color: #363636;
+}
+
+.border-none {
+	border: none !important;
+}
+
+@keyframes todo-anim {
+	from {
+		transform: skewX(0);
+	}
+
+	to {
+		transform: scale(1.1);
+	}
+}
